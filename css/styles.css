@@ -1,0 +1,749 @@
+/*- link google fonts-*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');
+/*- selector universal -*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right top, #051437, #60265a, #b53c5a, #e9763d, #e9c51d);}
+/*---------------- bordes ---------------------*/
+.item{
+    border: 0px solid blueviolet; /*- para visualizar cada item */
+}
+
+/*--- GRIDS INDEX ---- */
+.contenedorIndex{
+    min-height: 100vh;
+    width: auto;
+
+    display: grid;
+}
+/*- columnas y filas INDEX -*/
+.headerIndex{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.mainInfohome{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.sidebarGaleriahome{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.footerIndex{
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+/*--FIN GRIDS INDEX--*/
+
+/*--- GRIDS NOSOTROS ---- */
+.contenedorNosotros{
+    min-height: 100vh;
+    width: auto;
+
+    display: grid;
+}
+/*- columnas y filas NOSOTROS -*/
+.headerNosotros{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.nosotros{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.mapsNosotros{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.footerNosotros{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+/*-- FIN GRIDS NOSOTROS -- */
+
+/*------------------------------------------ INICIO INDEX --------------------------------------- /* 
+
+/*--------- header INDEX ---------*/
+.headerIndex h1{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.headerIndex a{
+    text-decoration:none;
+}
+.headerIndex a:hover{
+    color: white;
+}
+.headerIndex a h1:hover{
+    color: white;
+}
+/*------- nav INDEX ----------*/
+.navIndex{
+    margin-left: 75%;
+    margin-top: 0rem;
+}
+.navIndex li{
+    list-style: none;
+}
+.navIndex li a{
+    line-height: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+/*------- FIN nav INDEX ----------*/
+
+/*--------- FIN header INDEX ---------*/
+
+/*----------- infoprincipal INDEX -------------*/
+.tituloInfoPrincipal{
+    margin-left: 10px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.listaInfoPrincipal{
+    margin-top: 10px;
+    margin-left: 15px;
+
+    list-style-type: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.sidebarGaleriahome{
+    display: flex;
+    flex-flow: column;
+    justify-content: none;
+}
+/*-------------- galeria INDEX ------------ */
+.torta1, .torta2, .torta3{
+    height: 130px;
+    width: 120px;
+    border: 7px solid #db392abd;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+}
+/*-------------- footer INDEX ---------------------*/
+.footerIndex{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+/*- iframe redes sociales -*/
+.footerIndex i{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 40px;
+}
+/*- datos del servicio -*/
+.footerdatosIndex{
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+}
+/*- derechos de copyright -*/
+.footerderechosIndex{
+    font-size: 12px;
+}
+/*-------------- FIN footer INDEX ---------------------*/
+
+/*------------------------------------------ FIN INDEX --------------------------------------- /*
+
+/*------------------------------------------ INICIO NOSOTROS --------------------------------------- /*
+
+/*--------- header NOSOTROS ---------*/
+.headerNosotros h1{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.headerNosotros a{
+    text-decoration:none;
+}
+.headerNosotros a:hover{
+    color: white;
+}
+.headerNosotros a h1:hover{
+    color: white;
+}
+/*------- nav NOSOTROS ----------*/
+.navNosotros{
+    margin-left: 75%;
+    margin-top: 0rem;
+}
+.navNosotros li{
+    list-style: none;
+}
+.navNosotros li a{
+    line-height: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+/*------- fin nav ----------*/
+
+/*--------- FIN header NOSOTROS ---------*/
+
+/*----------- info NOSOTROS -------------*/
+.nosotros h2{
+    margin-left: 5px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.nosotros p{
+    margin-top: 3px;
+    margin-left: 15px;
+
+    list-style-type: none;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/*-------------- imagen NOSOTROS ------------ */
+.tortaNosotros{
+    height: 170px;
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+
+    outline: 7px rgba(184, 231, 16, 0.568) solid;
+    background-position: center;
+    background-size: cover;
+}
+/*---------- iframe google maps -----------*/
+.mapsNosotros h3{
+
+
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+
+    color: black;
+    font-size: 24px;
+}
+.mapsNosotros iframe{
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+}
+/*----------- footer NOSOTROS ---------*/
+.footerNosotros{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+/*------------ iframe redes sociales -----------*/
+.footerNosotros i{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 40px;
+}
+/*-------------- datos del servicio -------------*/
+.footerdatosNosotros{
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+}
+/*--------------- derechos de copyright ------------*/
+.footerderechosNosotros{
+    font-size: 12px;
+}
+/*-------------- FIN footer NOSOTROS -------------*/
+
+/*-------- media 320px ------------*/
+    @media only screen and (min-width:320px) and (max-width:479px){
+    /*INDEX*/
+        .contenedorIndex{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2.9fr 1fr;
+    }
+    /*FIN-INDEX*/
+    /*NOSOTROS*/
+        .contenedorNosotros{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 0.7fr 0.2fr;
+        }
+    /*FIN-NOSOTROS*/
+}
+/*-------- media 480px ------------*/
+    @media only screen and (min-width:480px){
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 2.6fr 1fr;
+        }
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin-top: 5px;
+        }
+        .listaInfoPrincipal{
+            line-height: 2.5rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 5px 0px 0px 50px;
+            height: 140px;
+            width: 130px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 40px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+
+        /*NOSOTROS*/
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin-left: 120px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            margin-left: 90px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 40px; 
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+}
+/*-------- media 600px ------------*/
+    @media only screen and (min-width:600px){
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-rows: 0.2fr 2.8fr 1fr;
+        }
+        /*--------- header INDEX ---------*/
+        .headerIndex h1{
+            font-size: 45px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 40%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navIndex li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin: 15px 20px;
+            font-size: 24px;
+        }
+        .listaInfoPrincipal{
+            font-size: 22px;
+            line-height: 4rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 10px 0px 0px 60px;
+            height: 190px;
+            width: 180px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            font-size: 45px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 40%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navNosotros li a{
+            font-size: 20px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 24px;
+        }
+        .nosotros p{
+            margin: 5px 25px;
+            font-size: 22px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 5px 120px 15px;
+            height: 260px;
+            width: 350px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            margin-left: 150px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+}
+/*------------------------------------- media 768px -----------------------*/
+    @media only screen and (min-width:768px) and (max-width:1023px){ /* RESOLUCION 768px x 1024px */
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-rows: 0.2fr 2.8fr 0.2fr;
+        }
+        /*--------- header INDEX ---------*/
+        .headerIndex h1{
+            font-size: 50px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 40%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navIndex li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin: 20px 20px;
+            font-size: 30px;
+        }
+        .listaInfoPrincipal{
+            margin-left: 30px;
+            font-size: 28px;
+            line-height: 7rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 20px 0px 0px 60px;
+            height: 290px;
+            width: 280px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            font-size: 50px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 40%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navNosotros li a{
+            font-size: 24px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 30px;
+        }
+        .nosotros p{
+            margin: 15px 25px;
+            font-size: 24px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 20px 140px 20px;
+            height: 360px;
+            width: 450px;
+        }
+        .mapsNosotros h3{
+            font-size: 30px;
+        }/*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            height: 500px;
+            width: 500px;
+            margin-left: 120px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosNosotros{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+}
+/*------------------------------------- media 1024px -----------------------*/
+    @media only screen and (min-width:1024px){
+        /*INDEX*/
+        /*--------- header INDEX ---------*/
+        .contenedorIndex{
+            grid-template-rows: 0.1fr 2fr 0.1fr;
+        }
+        .headerIndex h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 65%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navIndex li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 15%;
+            font-size: 36px;
+        }
+        .listaInfoPrincipal{
+            margin-left: 15%;
+            padding: 10px;
+            font-size: 28px;
+            line-height: 15rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 40px 0px 20px 140px;
+            height: 450px;
+            width: 370px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 65%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navNosotros li a{
+            font-size: 20px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 36px;
+        }
+        .nosotros p{
+            margin: 15px 25px;
+            font-size: 28px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 20px 25% 20px;
+            height: 400px;
+            width: 540px;
+        }
+        .mapsNosotros h3{
+            font-size: 34px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            height: 400px;
+            width: 400px;
+            margin-left: 35%;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosNosotros{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+    }
+    
+/*--------- header INDEX ---------*/
+/*------- nav INDEX ----------*/
+/*------- FIN nav INDEX ----------*/
+/*--------- FIN header INDEX ---------*/
+/*----------- infoprincipal INDEX -------------*/
+/*-------------- galeria INDEX ------------ */
+/*-------------- footer INDEX ---------------------*/
+/*-------------- FIN footer INDEX ---------------------*/
+
+/*--------- header NOSOTROS ---------*/
+/*------- nav NOSOTROS ----------*/
+/*------- fin nav ----------*/
+/*--------- FIN header NOSOTROS ---------*/
+/*----------- info NOSOTROS -------------*/
+/*-------------- imagen NOSOTROS ------------ */
+/*---------- iframe google maps -----------*/
+/*----------- footer NOSOTROS ---------*/
+/*------------ i redes sociales -----------*/
+/*-------------- datos del servicio -------------*/
+/*--------------- derechos de copyright ------------*/
+/*-------------- FIN footer NOSOTROS -------------*/
