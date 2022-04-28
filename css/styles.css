@@ -66,6 +66,104 @@ body{
 }
 /*-- FIN GRIDS NOSOTROS -- */
 
+/*--- GRIDS CONTACTO ---- */
+.contenedorContacto{
+    min-height: 100vh;
+    width: auto;
+
+    display: grid;
+}
+/*- columnas y filas CONTACTO -*/
+.headerContacto{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.formularioContacto{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.footerContacto{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+/*-- FIN GRIDS CONTACTO -- */
+
+/* -- ANIMACIONES -- */
+/*---- animaciones img tortas INDEX ------- */
+.animtorta1:hover{
+    -webkit-animation: 2s animtorta1 1;
+}
+@-webkit-keyframes animtorta1{
+    20%{
+        -webkit-transform: scale(0.9) rotate(-2deg);
+    }
+    30%, 50%, 70%, 90%{
+        -webkit-transform: scale(0.9) rotate(2deg);
+    }
+    40%, 60%, 80%{
+        -webkit-transform: scale(0.9) rotate(-2deg);
+    }
+}
+/* ------ animaciones iframe redes, todas las secciones ---------- */
+.animredes:hover{
+    -webkit-animation: 1s animredes 1;
+}
+@-webkit-keyframes animredes{
+    40%{
+        -webkit-transform: scale(1.0);
+    }
+    20%, 60%{
+        -webkit-transform: scale(1.1);
+    }
+}
+/*---------- animacion torta NOSOTROS --------------- */
+.apariciontorta { 
+	animation: 5s apariciontorta 1; 
+	transform-origin: top left;
+}
+
+@keyframes apariciontorta
+{
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+}
+/* --------animaciones formulario CONTACTO ----------*/
+/* intro formulario */
+.veloz 
+{
+	animation: 1s veloz 1;
+}
+
+@keyframes veloz
+{
+	0% 
+	{ 
+		opacity: 0;
+		transform: translateX(-200%) skewX(15deg); 
+	}
+
+	60% 
+	{
+		opacity: 1;
+		transform: translateX(20%) skewX(-15deg);
+	}
+
+	80%
+	{
+		transform: translateX(0%) skewX(15deg);
+	}
+}
+/* boton enviar movimiento */
+.animenviar:hover
+{
+	animation: 1s animenviar infinite;
+}
+
+@keyframes animenviar
+{
+	5%, 25%, 45%, 65%, 85% { transform: translateX(-2px); }
+	15%, 35%, 55%, 75%, 95% { transform: translateX(2px); }
+}
 /*------------------------------------------ INICIO INDEX --------------------------------------- /* 
 
 /*--------- header INDEX ---------*/
@@ -140,6 +238,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 /*-------------- footer INDEX ---------------------*/
 .footerIndex{
     text-align: center;
@@ -292,6 +391,126 @@ body{
     font-size: 12px;
 }
 /*-------------- FIN footer NOSOTROS -------------*/
+/*------------------------------------------ FIN NOSOTROS --------------------------------------- /*
+
+/*------------------------------------------ INICIO CONTACTO --------------------------------------- /*
+/*--------- header INDEX ---------*/
+.headerContacto h1{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.headerContacto a{
+    text-decoration:none;
+}
+.headerContacto a:hover{
+    color: white;
+}
+.headerContacto a h1:hover{
+    color: black;
+}
+/*------- nav CONTACTO ----------*/
+.navContacto{
+    margin-left: 75%;
+    margin-top: 0rem;
+}
+.navContacto li{
+    list-style: none;
+}
+.navContacto li a{
+    line-height: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+/*------- fin nav ----------*/
+/*--------- FIN header CONTACTO ---------*/
+
+/*--------- Formulario Contacto --------- */
+#formularioContacto{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+#Contacto{
+    height: 100vh;
+    width: auto;
+    margin-top: 15px;
+
+    text-align: center;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+fieldset{
+    border-color: rgba(255, 255, 255, 0);
+}
+.form{
+    width: 200px;
+    padding: 10px;
+
+    flex: 1;
+    text-align: center;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    color: black;
+}
+.form__input{
+    width: auto;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 3px solid rgb(11, 94, 38);
+    background: rgb(11, 94, 38);
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.form textarea{
+    height: 100px;
+}
+
+/*----------- footer CONTACTO ---------*/
+.footerContacto{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+/*------------ iframe redes sociales -----------*/
+.footerContacto i{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 40px;
+}
+/*-------------- datos del servicio -------------*/
+.footerdatosContacto{
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+}
+/*--------------- derechos de copyright ------------*/
+.footerderechosContacto{
+    font-size: 12px;
+}
+/*------------------------------------------ FIN CONTACTO --------------------------------------- /*
+
 
 /*-------- media 320px ------------*/
     @media only screen and (min-width:320px) and (max-width:479px){
@@ -307,6 +526,12 @@ body{
             grid-template-rows: 0.2fr 1.5fr 0.7fr 0.2fr;
         }
     /*FIN-NOSOTROS*/
+    /*CONTACTO*/
+        .contenedorContacto{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 0.2fr;
+        }
+    /*FIN-CONTACTO*/
 }
 /*-------- media 480px ------------*/
     @media only screen and (min-width:480px){
@@ -358,6 +583,16 @@ body{
         }
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
+
+        /*CONTACTO*/
+        .form{
+            width: 350px;
+        }
+        .form__input{
+            width: 325px;
+            padding: 5px;
+        }
+        /*FIN-CONTACTO*/
 }
 /*-------- media 600px ------------*/
     @media only screen and (min-width:600px){
@@ -533,6 +768,7 @@ body{
         }
         /*-------------- FIN footer INDEX ---------------------*/
         /*FIN-INDEX*/
+        
         /*NOSOTROS*/
         /*--------- header NOSOTROS ---------*/
         .headerNosotros h1{
@@ -595,6 +831,70 @@ body{
         }
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
+
+        /*INICIO-CONTACTO*/
+        .contenedorContacto{
+            grid-template-rows: 0.2fr 2.4fr 0.2fr;
+        }
+        /*--------- header CONTACTO ---------*/
+        .headerContacto h1{
+            font-size: 50px;
+        }
+        /*------- nav CONTACTO ----------*/
+        .navContacto{
+            margin-left: 40%;
+        }
+        .navContacto li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navContacto li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav CONTACTO ----------*/
+        /*--------- FIN header CONTACTO ---------*/
+
+        /*--------- Formulario Contacto --------- */
+        #Contacto{
+            font-size: 30px;
+        }
+        .form{
+            width: 550px;
+            margin: 15px;
+
+            font-size: 24px;
+        }
+        .form__input{
+            width: 525px;
+            margin: 10px;
+            padding: 15px;
+
+            font-size: 18px;
+        }
+        .form textarea{
+            height: 200px;
+        }
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosContacto{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosContacto{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
+        /*FIN-CONTACTO*/
 }
 /*------------------------------------- media 1024px -----------------------*/
     @media only screen and (min-width:1024px){
@@ -724,6 +1024,68 @@ body{
         }
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
+
+                /*CONTACTO*/
+        /*--------- header CONTACTO ---------*/
+        .headerContacto h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav CONTACTO ----------*/
+        .navContacto{
+            margin-left: 65%;
+        }
+        .navContacto li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navContacto li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav CONTACTO ----------*/
+        /*--------- FIN header CONTACTO ---------*/
+
+        /*--------- Formulario Contacto --------- */
+        #Contacto{
+            font-size: 34px;
+        }
+        .form{
+            width: 550px;
+            margin: 0px;
+
+            font-size: 24px;
+        }
+        .form__input{
+            width: 525px;
+            margin: 0px;
+            padding: 5px;
+
+            font-size: 18px;
+        }
+        .form textarea{
+            height: 100px;
+        }
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosContacto{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosContacto{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
+        /*FIN-CONTACTO*/
     }
     
 /*--------- header INDEX ---------*/
