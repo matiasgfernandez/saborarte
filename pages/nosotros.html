@@ -1,50 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".././css/styles.css">
-    <!-- linkfavicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-36x36.png">
-    <!-- link google-fonts -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href=".././img/favicon-36x36.png">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <!-- link font-awesome -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href=".././css/styles.css">
     <title>Saborarte</title>
 </head>
 <body>
-    <section class="contenedorNosotros">
-        <div class="item headerNosotros"><a href="../index.html"><h1>Saborarte</h1></a>
-            <ul class="navNosotros">
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul></div>
-                <div class="item nosotros">
-                    <h2>Sobre nosotros...</h2>
-                        <p>Después de mucho tiempo tratando de emprender un compromiso con nuestros ideales, conservando nuestras recetas, hábitos y por sobre todo el buen gusto. </p>
-                        <p>¡Con la materia prima por excelencia, orgánica y fresca!</p>
-                            <img src="/img/nosotros1.jpg" alt="torta-organica" class="tortaNosotros apariciontorta">
-                        <p>Saborarte es un vaivén de gustos, somos una casa con recetas de familia que desde 2012 con mucho valor decidió abrir sus puertas para traer nuevos sabores a la zona... ¡y queremos llegar a tu mesa!</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success"> <!-- Menú NavBar -->
+            <div class="container-fluid">
+                <a class="navbar-brand logotipo" href="../index.html">Saborarte</a> <!-- Logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-stretch" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-        <div class="item mapsNosotros">
-            <h3>Visítanos!</h3> <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.600215459161!2d-65.3079830847047!3d-43.25979987247524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144c453527f5d%3A0x705c9ddfe5747945!2sCentenario%20449-599%2C%20Trelew%2C%20Chubut!5e0!3m2!1ses!2sar!4v1648423404281!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="item footerNosotros">
-            <div class="footerseguinosycontactanosNosotros"> <strong>Seguinos y contáctanos en nuestras redes!</strong></div>
-            <a href="http://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square animredes"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square animredes"></i></a>
-            <a href="http://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp-square animredes"></i></a>
-        <div class="footerdatosNosotros">Encontranos en calle Centenario n°449 </div>
-        <div class="footerdatosNosotros">Horarios: 8hs a 12:30hs y de 17hs a 19hs </div>
-        <div class="footerdatosNosotros">Teléfono: 011 1512-3456</div> <br>
-            <div class="footerderechosNosotros">© 2022 - Saborarte - Todos los derechos reservados</div>
-        </div>
+            </div> <!-- fin NavBar-->
+        </nav>
+    </header>
+<!-- Info nosotros -->
+<main>
+    <section class="principal container">
+        <article>
+            <div id="mainInfo">
+                <h2 class="px-4 text-center text-md-center text-lg-center p-4">Sobre nosotros...</h2>
+                    <p class="px-4 text-center text-md-center text-lg-center">Después de mucho tiempo queriendo y luchando por emprender un compromiso con nuestros ideales, conservando nuestras recetas, hábitos y por sobre todo el buen gusto. </p>
+                    <p class="px-4 text-center text-md-center text-lg-center">¡Con la materia prima por excelencia, orgánica y fresca!</p>
+            </div>
+            <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> <!-- Carousel --> 
+                <div id="carouselExampleSlidesOnly" class="carousel slide carouselNosotros" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src=".././img/local1.jpg" class="d-block w-100" alt="local">
+                        </div>
+                        <div class="carousel-item">
+                            <img src=".././img/food1.jpg" class="d-block w-100" alt="pasteleria en mesa">
+                        </div>
+                        <div class="carousel-item">
+                            <img src=".././img/food2.jpg" class="d-block w-100" alt="bakery">
+                        </div>
+                    </div>
+                </div> <!-- Fin Carousel -->
+                <p class="px-4 text-center text-md-center text-lg-center">Saborarte es un vaivén de gustos, somos una casa con recetas de familia que desde hace dos siglos con mucho valor decidió abrir sus puertas para traer nuevos sabores a la zona... <br>¡y queremos llegar a tu mesa!</p>
+            </div>
+        </article>
     </section>
+</main>
+<!-- fin Info nosotros -->
+<!-- iframe gMaps -->
+<div class="mapsNosotros">
+    <h3 class="px-4 text-start text-md-center text-lg-center p-4">Visítanos!</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.600215459161!2d-65.3079830847047!3d-43.25979987247524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144c453527f5d%3A0x705c9ddfe5747945!2sCentenario%20449-599%2C%20Trelew%2C%20Chubut!5e0!3m2!1ses!2sar!4v1648423404281!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="zoom-in"></iframe>
+</div>
+<!-- Footer -->
+<footer class="footer container-fluid bg-success" data-aos="fade-up">
+    <div class="footerTexto">
+        <h4 class="px-4 text-start text-md-center text-lg-center p-4">Seguinos en nuestras redes!</h4>
+    </div>
+    <!--iframe redes-->
+    <section class="footer__redes text-center my-5">
+        <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.whatsapp.com/">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </section>
+    <!-- datos -->
+    <div class="datosFooter">
+        <p>Encontranos en calle Centenario n°449</p>
+        <p>8hs a 12:30hs y de 17hs a 19hs</p>
+        <p>Teléfono: 011 1512-3456</p>
+    </div>
+    <!-- derechos-->
+    <div class="footer__derechos text-center p-3">
+        <p>© Saborarte 2022</p>
+    </div>
+</footer>
+<!-- SCRIPTS -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<!-- Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
