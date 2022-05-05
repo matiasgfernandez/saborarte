@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 /*-- ajustes bs --*/
@@ -13,6 +15,9 @@
 }
 .navbar-collapse{
     flex-grow: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
 }
 .logotipo{
     font-size: 28px;
@@ -69,6 +74,9 @@
     border-radius: 1rem;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384)
 }
+.containerBanner h4{
+    margin: 1rem;
+}
 /*--- boton contactanos ---*/
 .btn-principal {
     padding: 1.3em 2em;
@@ -101,6 +109,7 @@
     font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
 }
+/*---carousel---*/
 .carouselNosotros{
     width: 40%;
     height: auto;
@@ -108,6 +117,7 @@
     
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
 }
+/*--- google maps ---*/
 .mapsNosotros h3{
     font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
@@ -121,7 +131,79 @@
     border-radius: 5px;
 }
 /*------ FIN NOSOTROS ------ */
+/*------ PRODUCTOS ------*/
+/*--- carta de productos ----*/
+.cardProductos{
+    width: 80%;
+    height: auto;
+    margin: 1rem 0 0 10%;
+}
+.card-img-top{
+    margin: 0 0 0 1rem;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
+}
+/*-boton de contacto-*/
+.botonContacto__productos{
+    margin: 1rem;
+}
+/*------ testimonial review -----*/
+.testimonial {
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    background-color: #ffc107;
+}
+.testimonial h2 {
+    margin: 1rem auto;
+}
+.testimonial .carta, .testimonial .map, .testimonial .formulario, .testimonial .title h1, .title .testimonial h1 {
+    max-width: 1000px;
+}
+.carta, .title h1, .formulario, .map {
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    transition: all 0.2s;
+    margin: 0 0 0 1rem;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
+}
+.testimonial .carta h5, .testimonial .map h5, .testimonial .formulario h5, .testimonial .title h1 h5, .title .testimonial h1 h5 {
+    margin-top: 1rem;
+}
+.testimonial .carta p, .testimonial .map p, .testimonial .formulario p, .testimonial .title h1 p, .title .testimonial h1 p {
+    padding: 0.5rem;
+}
+.testimonial .avatar img {
+    margin-top: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px #198754;
+}
+/*------ FIN PRODUCTOS ------*/
+/*------ FAQs ------ */
+.tituloFaqs{
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+.tituloFaqs img{
+    width: 45%;
+    margin:0 0 0 28%;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
+}
+/*--- accordion ---*/
+.accordionfaqs{
+    width: 60%;
+    height: auto;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
+    margin: 2rem 0 2rem 20%;
+}
+/*------ FIN FAQs ------ */
 /*------ CONTACTO ------*/
+.infoContacto h2{
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 1rem;
+}
+/*--- formulario ---*/
 .contenedorFormulario{
     width: 35%;
     height: auto;
