@@ -1,0 +1,38 @@
+.testimonial {
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    background-color: $color4;
+}
+.testimonial{ 
+    h2{
+        margin: 1rem auto;
+        font-family: $font1;
+        font-weight: 600;
+    }
+} 
+.testimonial .carta, .testimonial .map, .testimonial .formulario, .testimonial .title h1, .title .testimonial h1 {
+    max-width: 1000px;
+}
+.carta, .title h1, .formulario, .map {
+    background: $color3;
+    border: 2px solid $color2;
+    transition: all 0.2s;
+    margin: 0 0 0 1rem;
+    box-shadow: 2px 5px 15px $color2;
+}
+.testimonial .carta h5, .testimonial .map h5, .testimonial .formulario h5, .testimonial .title h1 h5, .title .testimonial h1 h5 {
+    margin-top: 1rem;
+}
+.testimonial .carta p, .testimonial .map p, .testimonial .formulario p, .testimonial .title h1 p, .title .testimonial h1 p {
+    padding: 0.5rem;
+}
+.testimonial .avatar{
+    img{
+        margin-top: 2rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid 2px $color1;
+}
+}
