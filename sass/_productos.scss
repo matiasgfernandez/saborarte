@@ -27,3 +27,93 @@
     grid-row: 5/6;
 }
 /*-- FIN GRIDS Productos -- */
+/*--------- header Productos ---------*/
+.headerProductos h1{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.headerProductos a{
+    text-decoration:none;
+}
+.headerProductos a:hover{
+    color: white;
+    h1:hover{
+        color: white;
+    }
+}
+/*------- nav Productos ----------*/
+.navProductos{
+    margin-left: 75%;
+    margin-top: 0rem;
+}
+.navProductos li{
+    list-style: none;
+    a{
+        line-height: 1.3rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 17px;
+        font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+    }
+}
+/*------- FIN nav INDEX ----------*/
+
+/*--------- FIN header INDEX ---------*/
+.articleProductos, .articleProductos2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between
+}
+.imgProd{
+    width: 180px;
+    height: 150px;
+    flex: 0 0 auto;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+        h3{
+            text-align: center;
+            font-weight: bolder;
+        }
+        p{
+            text-align: center;
+        }
+}
+/*-------------- footer PRODUCTOS ---------------------*/
+.footerProductos{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+/*- iframe redes sociales -*/
+.footerProductos i{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 40px;
+}
+/*- datos del servicio -*/
+.footerdatosProductos{
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+}
+/*- derechos de copyright -*/
+.footerderechosProductos{
+    font-size: 12px;
+}
+/*-------------- FIN footer PRODUCTOS ---------------------*/

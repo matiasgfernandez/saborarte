@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Description y Keywords -->
+    <meta name="description" content="Tienda de Gastronomia y Pastelería especializada en diseños personalizados, postres y eventos.">
+    <meta name="keywords" content="torta, cake, eventos, gastronomia, tienda, diseño">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +16,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Saborarte</title>
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Productos</title>
 </head>
 <body>
     <section class="contenedorProductos">
-        <div class="item headerProductos"></div>
-        <div class="item articleProductos">
-            <img src="" alt=""><img src="" alt=""><img src="" alt="">
+        <div class="item headerProductos">
+            <a href="../index.html"><h1>Saborarte</h1></a>
+            <ul class="navProductos">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
         </div>
-        <div class="item testimonial"></div>
-        <div class="item articleProductos2"></div>
+        <div class="item articleProductos">
+            <img src=".././img/productos1.jpg" alt="Torta con Champagne y Fresas" class="imgProd">
+                <div>
+                    <h3>Torta con Champagne y Fresas</h3>
+                        <p>Es un postre suave, fragante y goloso, con un delicado aroma a vino espumoso, apto para disfrutar en cualquier momento del día. Ideal para el desayuno o merienda con una infusión caliente de frutos rojos, ofrécelo a tus invitados como postre al final de una comida.</p>
+                </div>
+            <img src=".././img/productos2.jpg" alt="Tarta de Vainilla" class="imgProd">
+                <div>
+                    <h3>Tarta de Vainilla</h3>
+                        <p>El bizcocho es suave, con un rotundo sabor a vainilla y su relleno es un chantillí avainillado. Este tipo de tartas no deberían faltar nunca en un té inglés, una merienda o en una fiesta de cumpleaños</p>
+                </div>
+            <img src=".././img/productos3.jpg" alt="Torta Red Velvet" class="imgProd">
+                <div>
+                    <h3>Torta Red Velvet</h3>
+                        <p>Es un bizcocho que queda húmedo y jugosísimo, con un ligero toque agrio que es una maravilla y la cobertura dulce de queso es la que hace que la combinación sea auténtica.</p>
+                </div>
+        </div>
+        <div class="item testimonial">
+            <div class="testimonialText"></div>
+        </div>
+        <div class="item articleProductos2">
+            <img src=".././img/productos4.jpg" alt="Pastel Helado con Frutillas" class="imgProd">
+                <div>
+                    <h3>Pastel Helado con Frutillas</h3>
+                        <p>Este pastel es refrescante y esponjos, tiene una combinación de texturas increíble, que se convertirá en tu favorita.</p>
+                </div>
+            <img src=".././img/productos5.jpg" alt="Pastel de Casamiento" class="imgProd">
+                <div>
+                    <h3>Pastel de Casamiento</h3>
+                        <p>Un punto fuerte de este pastel es su elegancia. No es de grandes dimensiones, a decir verdad. Aunque lo que le falta en tamaño le sobra en estilo. Definitivamente no hallarás muchas otras bodas en las que haya uno similar. Por ende, la tuya será la más especial de todas.</p>
+                </div>
+            <img src=".././img/productos6.jpg" alt="Tarta Cheesecake de Café" class="imgProd">
+                <div>
+                    <h3>Tarta Cheesecake de Café</h3>
+                        <p>La combinación de la textura crujiente de la base con la textura cremosa del cheesecake hace que este postre sea espectacular.</p>
+                </div>
+        </div>
         <div class="item footerProductos">
             <div class="footerseguinosycontactanosProductos"> <strong>Seguinos y contáctanos en nuestras redes!</strong></div>
             <a href="http://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square animredes"></i></a>
@@ -34,5 +79,11 @@
             <div class="footerderechosProductos">© 2022 - Saborarte - Todos los derechos reservados</div>
         </div>
     </section>
+<!-- SCRIPTS -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>

@@ -1,13 +1,13 @@
+$font1: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
 /*- selector universal -*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-image: linear-gradient(to right top, #051437, #60265a, #b53c5a, #e9763d, #e9c51d);}
 /*---------------- bordes ---------------------*/
 .item{
-    border: 0px solid blueviolet; /*- para visualizar cada item */
+    border: 1px solid blueviolet; /*- para visualizar cada item */
 }

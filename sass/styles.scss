@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');/*- link google fonts-*/
 @import "_variables";
+@import "_index";
 @import "_nosotros";
 @import "_productos";
 @import "_contacto";
+@import "_faqs";
 @import "_anim";
-/* BORRAR ESTO */
-/*---------------- bordes BORRAR ESTO ---------------------*/
-.item{
-    border: 1px solid blueviolet; /*- para visualizar cada item */
-}
-
 /*-------- media 320px ------------*/
     @media only screen and (min-width:320px) and (max-width:479px){
     /*INDEX*/
@@ -30,6 +26,10 @@
             grid-template-rows: 0.2fr 1.5fr 0.2fr;
         }
     /*FIN-CONTACTO*/
+        .contenedorProductos{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+        }
 }
 /*-------- media 480px ------------*/
     @media only screen and (min-width:480px){
