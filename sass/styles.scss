@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');/*- link google fonts-*/
+@import "_variables";
+@import "_nosotros";
+@import "_productos";
+@import "_contacto";
+@import "_anim";
+/* BORRAR ESTO */
+/*---------------- bordes BORRAR ESTO ---------------------*/
+.item{
+    border: 1px solid blueviolet; /*- para visualizar cada item */
+}
+
+/*-------- media 320px ------------*/
+    @media only screen and (min-width:320px) and (max-width:479px){
+    /*INDEX*/
+        .contenedorIndex{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2.9fr 1fr;
+    }
+    /*FIN-INDEX*/
+    /*NOSOTROS*/
+        .contenedorNosotros{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 0.7fr 0.2fr;
+        }
+    /*FIN-NOSOTROS*/
+    /*CONTACTO*/
+        .contenedorContacto{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 0.2fr;
+        }
+    /*FIN-CONTACTO*/
+}
+/*-------- media 480px ------------*/
+    @media only screen and (min-width:480px){
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 2.6fr 1fr;
+        }
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin-top: 5px;
+        }
+        .listaInfoPrincipal{
+            line-height: 2.5rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 5px 0px 0px 50px;
+            height: 140px;
+            width: 130px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 40px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+
+        /*NOSOTROS*/
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin-left: 120px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            margin-left: 90px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 40px; 
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+
+        /*CONTACTO*/
+        .form{
+            width: 350px;
+        }
+        .form__input{
+            width: 325px;
+            padding: 5px;
+        }
+        /*FIN-CONTACTO*/
+}
+/*-------- media 600px ------------*/
+    @media only screen and (min-width:600px){
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-rows: 0.2fr 2.8fr 1fr;
+        }
+        /*--------- header INDEX ---------*/
+        .headerIndex h1{
+            font-size: 45px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 40%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navIndex li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin: 15px 20px;
+            font-size: 24px;
+        }
+        .listaInfoPrincipal{
+            font-size: 22px;
+            line-height: 4rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 10px 0px 0px 60px;
+            height: 190px;
+            width: 180px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            font-size: 45px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 40%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navNosotros li a{
+            font-size: 20px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 24px;
+        }
+        .nosotros p{
+            margin: 5px 25px;
+            font-size: 22px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 5px 120px 15px;
+            height: 260px;
+            width: 350px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            margin-left: 150px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+}
+/*------------------------------------- media 768px -----------------------*/
+    @media only screen and (min-width:768px) and (max-width:1023px){ /* RESOLUCION 768px x 1024px */
+        /*INDEX*/
+        .contenedorIndex{
+            grid-template-rows: 0.2fr 2.8fr 0.2fr;
+        }
+        /*--------- header INDEX ---------*/
+        .headerIndex h1{
+            font-size: 50px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 40%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navIndex li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            margin: 20px 20px;
+            font-size: 30px;
+        }
+        .listaInfoPrincipal{
+            margin-left: 30px;
+            font-size: 28px;
+            line-height: 7rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 20px 0px 0px 60px;
+            height: 290px;
+            width: 280px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            font-size: 50px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 40%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navNosotros li a{
+            font-size: 24px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 30px;
+        }
+        .nosotros p{
+            margin: 15px 25px;
+            font-size: 24px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 20px 140px 20px;
+            height: 360px;
+            width: 450px;
+        }
+        .mapsNosotros h3{
+            font-size: 30px;
+        }/*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            height: 500px;
+            width: 500px;
+            margin-left: 120px;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosNosotros{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+
+        /*INICIO-CONTACTO*/
+        .contenedorContacto{
+            grid-template-rows: 0.2fr 2.4fr 0.2fr;
+        }
+        /*--------- header CONTACTO ---------*/
+        .headerContacto h1{
+            font-size: 50px;
+        }
+        /*------- nav CONTACTO ----------*/
+        .navContacto{
+            margin-left: 40%;
+        }
+        .navContacto li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navContacto li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav CONTACTO ----------*/
+        /*--------- FIN header CONTACTO ---------*/
+
+        /*--------- Formulario Contacto --------- */
+        #Contacto{
+            font-size: 30px;
+        }
+        .form{
+            width: 550px;
+            margin: 15px;
+
+            font-size: 24px;
+        }
+        .form__input{
+            width: 525px;
+            margin: 10px;
+            padding: 15px;
+
+            font-size: 18px;
+        }
+        .form textarea{
+            height: 200px;
+        }
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosContacto{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosContacto{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
+        /*FIN-CONTACTO*/
+}
+/*------------------------------------- media 1024px -----------------------*/
+    @media only screen and (min-width:1024px){
+        /*INDEX*/
+        /*--------- header INDEX ---------*/
+        .contenedorIndex{
+            grid-template-rows: 0.1fr 2fr 0.1fr;
+        }
+        .headerIndex h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav INDEX ----------*/
+        .navIndex{
+            margin-left: 65%;
+        }
+        .navIndex li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navIndex li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav INDEX ----------*/
+        /*--------- FIN header INDEX ---------*/
+        /*----------- infoprincipal INDEX -------------*/
+        .tituloInfoPrincipal{
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 15%;
+            font-size: 36px;
+        }
+        .listaInfoPrincipal{
+            margin-left: 15%;
+            padding: 10px;
+            font-size: 28px;
+            line-height: 15rem;
+        }
+        /*-------------- galeria INDEX ------------ */
+        .torta1, .torta2, .torta3{
+            margin: 40px 0px 20px 140px;
+            height: 450px;
+            width: 370px;
+        }
+        /*-------------- footer INDEX ---------------------*/
+        .footerIndex{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerIndex i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosIndex{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosIndex{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer INDEX ---------------------*/
+        /*FIN-INDEX*/
+        /*NOSOTROS*/
+        /*--------- header NOSOTROS ---------*/
+        .headerNosotros h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav NOSOTROS ----------*/
+        .navNosotros{
+            margin-left: 65%;
+        }
+        .navNosotros li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navNosotros li a{
+            font-size: 20px;
+        }
+        /*------- fin nav ----------*/
+        /*--------- FIN header NOSOTROS ---------*/
+        /*----------- info NOSOTROS -------------*/
+        .nosotros h2{
+            margin: 15px 20px;
+            font-size: 36px;
+        }
+        .nosotros p{
+            margin: 15px 25px;
+            font-size: 28px;
+        }
+        /*-------------- imagen NOSOTROS ------------ */
+        .tortaNosotros{
+            margin: 20px 25% 20px;
+            height: 400px;
+            width: 540px;
+        }
+        .mapsNosotros h3{
+            font-size: 34px;
+        }
+        /*---------- iframe google maps -----------*/
+        .mapsNosotros iframe{
+            height: 400px;
+            width: 400px;
+            margin-left: 35%;
+        }
+        /*----------- footer NOSOTROS ---------*/
+        .footerNosotros{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerNosotros i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosNosotros{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosNosotros{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer NOSOTROS -------------*/
+        /*FIN-NOSOTROS*/
+
+                /*CONTACTO*/
+        /*--------- header CONTACTO ---------*/
+        .headerContacto h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav CONTACTO ----------*/
+        .navContacto{
+            margin-left: 65%;
+        }
+        .navContacto li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navContacto li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav CONTACTO ----------*/
+        /*--------- FIN header CONTACTO ---------*/
+
+        /*--------- Formulario Contacto --------- */
+        #Contacto{
+            font-size: 34px;
+        }
+        .form{
+            width: 550px;
+            margin: 0px;
+
+            font-size: 24px;
+        }
+        .form__input{
+            width: 525px;
+            margin: 0px;
+            padding: 5px;
+
+            font-size: 18px;
+        }
+        .form textarea{
+            height: 100px;
+        }
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosContacto{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosContacto{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
+        /*FIN-CONTACTO*/
+    }
+    
+/*--------- header INDEX ---------*/
+/*------- nav INDEX ----------*/
+/*------- FIN nav INDEX ----------*/
+/*--------- FIN header INDEX ---------*/
+/*----------- infoprincipal INDEX -------------*/
+/*-------------- galeria INDEX ------------ */
+/*-------------- footer INDEX ---------------------*/
+/*-------------- FIN footer INDEX ---------------------*/
+
+/*--------- header NOSOTROS ---------*/
+/*------- nav NOSOTROS ----------*/
+/*------- fin nav ----------*/
+/*--------- FIN header NOSOTROS ---------*/
+/*----------- info NOSOTROS -------------*/
+/*-------------- imagen NOSOTROS ------------ */
+/*---------- iframe google maps -----------*/
+/*----------- footer NOSOTROS ---------*/
+/*------------ i redes sociales -----------*/
+/*-------------- datos del servicio -------------*/
+/*--------------- derechos de copyright ------------*/
+/*-------------- FIN footer NOSOTROS -------------*/

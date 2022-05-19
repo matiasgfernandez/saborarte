@@ -1,0 +1,29 @@
+/*--- GRIDS Productos ---- */
+.contenedorProductos{
+    min-height: 100vh;
+    width: auto;
+
+    display: grid;
+}
+/*- columnas y filas Productos -*/
+.headerProductos{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.articleProductos{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.testimonial{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.articleProductos2{
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+.footerProductos{
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+/*-- FIN GRIDS Productos -- */
