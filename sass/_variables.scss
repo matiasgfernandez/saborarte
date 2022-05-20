@@ -1,4 +1,11 @@
+$color1:rgb(0, 0, 0);
+$color2:white;
+$color3:rgb(240, 220, 46);
+$color4:#22789C;
+$color5:#E8617A;
+
 $font1: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+$font2: 'Poppins', sans-serif;
 /*- selector universal -*/
 *{
     margin: 0;
@@ -6,8 +13,5 @@ $font1: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right top, #051437, #60265a, #b53c5a, #e9763d, #e9c51d);}
-/*---------------- bordes ---------------------*/
-.item{
-    border: 1px solid blueviolet; /*- para visualizar cada item */
+    background-image: linear-gradient(to bottom, #ffff48, #feff56, #fdff62, #fcff6d, #fbff78, #f6fb75, #f1f773, #ecf370, #e1ea60, #d7e14f, #ccd83d, #c1cf27);
 }

@@ -32,22 +32,25 @@
 }
 /*-- FIN GRIDS Faqs -- */
 /*--------- header Faqs ---------*/
-.headerFaqs h1{
-    float: left;
-    margin-top: 1rem;
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
+.headerFaqs{
+    background-color: #ddd01c;
+    h1{
+        float: left;
+        margin-top: 1rem;
+        margin-left: 10px;
+        font-size: 40px;
+        font-family: $font1;
+        color: $color1;
+    }
 }
 .headerFaqs a{
     text-decoration:none;
 }
 .headerFaqs a:hover{
-    color: white;
+    color: $color2;
 }
 .headerFaqs a h1:hover{
-    color: white;
+    color: $color2;
 }
 /*------- nav Faqs ----------*/
 .navFaqs{
@@ -62,14 +65,18 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    font-family: $font1;
+    color: $color1;
 }
 /*------- FIN Faqs ----------*/
 /*--------- FIN head Faqs ---------*/
 .titleFaqs{
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     text-align: center;
+    h1{
+        margin: 15px;
+        font-size: 32px;
+    }
 }
 .imgFaqs{
     display: inline-flex;
@@ -81,24 +88,28 @@
         width: 250px;
         height: 200px;
         margin: 10px 0 20px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 10px 3px rgba(0, 0, 0, 0.623);
     }
 }
 /*accordion*/
-input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+.accordion{
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
 }
 .accordion-wrapper {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
     width: 200px;
-    margin:0 auto;
+    margin:0 auto 15px;
 }
 .accordion {
     width: 100%;
-    color: white;
+    color: $color1;
     overflow: hidden;
     margin-bottom: 16px;
 }
@@ -110,13 +121,13 @@ input {
     -webkit-box-pack: justify;
     justify-content: space-between;
     padding: 16px;
-    background: rgba(4,57,94,.8);
+    background: $color4;
     font-weight: bold;
     cursor: pointer;
     font-size: 20px;
 }
 .accordion-label:hover {
-    background: rgba(4,57,94,1);
+    background: $color4;
 }
 .accordion-label::after {
     content: "\276F";
@@ -129,18 +140,18 @@ input {
 .accordion-content {
     max-height: 0;
     padding: 0 16px;
-    color: rgba(4,57,94,1);
-    background: white;
+    color: $color3;
+    background: $color2;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 .accordion-content p{
     margin: 0;
-    color: rgba(4,57,94,.7);
+    color: $color1;
     font-size: 18px;
 }
 input:checked + .accordion-label {
-    background: rgba(4,57,94,1);
+    background: $color4;
 }
 input:checked + .accordion-label::after {
     -webkit-transform: rotate(90deg);
@@ -152,7 +163,7 @@ input:checked ~ .accordion-content {
 }
 /*fin accordion*/
 .textoFaqs{
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -164,6 +175,7 @@ input:checked ~ .accordion-content {
     }
 }
 button {
+    margin-bottom: 10px;
     position: relative;
     outline: none;
     text-decoration: none;
@@ -173,8 +185,8 @@ button {
     height: 60px;
     width: 210px;
     opacity: 1;
-    background-color: #ffffff;
-    border: 1px solid rgba(22, 76, 167, 0.6);
+    background-color: $color5;
+    border: 1px solid rgba(22, 75, 167, 0);
     a{
         text-decoration: none;
     }
@@ -192,7 +204,13 @@ button:hover span {
     animation: storm 0.7s ease-in-out both;
     animation-delay: 0.06s;
 }
-
+button, span, a{
+    text-decoration: none;
+    font-family: $font2;
+    font-size: 16px;
+    font-weight: 800;
+    color: $color1;
+}
 @keyframes rotate {
     0% {
         transform: rotate(0deg) translate3d(0, 0, 0);
@@ -231,19 +249,29 @@ button:hover span {
 .footerFaqs{
     text-align: center;
     font-size: 16px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     font-style: normal;
     font-weight: 300;
-    color: white;
+    color: $color1;
+    i{/*- iframe redes sociales -*/
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        font-size: 30px;
+        color: $color1;
+        letter-spacing: 40px;
+    }
 }
-/*- iframe redes sociales -*/
-.footerFaqs i{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 40px;
+.footerContacto, a, i{
+    .fa-facebook-square{
+        color: #1877f2;
+    }
+    .fa-instagram-square{
+        color: #c32aa3;
+    }
+    .fa-whatsapp-square{
+        color: #07943b;
+    }
 }
 /*- datos del servicio -*/
 .footerdatosFaqs{

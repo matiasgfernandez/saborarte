@@ -24,24 +24,26 @@
 }
 /*-- FIN GRIDS NOSOTROS -- */
 /*------------------------------------------ INICIO NOSOTROS --------------------------------------- /*
-
 /*--------- header NOSOTROS ---------*/
-.headerNosotros h1{
-    float: left;
-    margin-top: 1rem;
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
+.headerNosotros{
+    background-color: #ddd01c;
+    h1{
+        float: left;
+        margin-top: 1rem;
+        margin-left: 10px;
+        font-size: 40px;
+        font-family: $font1;
+        color: $color1;
+    }
 }
 .headerNosotros a{
     text-decoration:none;
 }
 .headerNosotros a:hover{
-    color: white;
+    color: $color2;
 }
 .headerNosotros a h1:hover{
-    color: white;
+    color: $color2;
 }
 /*------- nav NOSOTROS ----------*/
 .navNosotros{
@@ -56,17 +58,15 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     color: black;
 }
 /*------- fin nav ----------*/
-
 /*--------- FIN header NOSOTROS ---------*/
-
 /*----------- info NOSOTROS -------------*/
 .nosotros h2{
     margin-left: 5px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     text-align: center;
     font-style: italic;
     font-weight: bolder;
@@ -90,15 +90,14 @@
     margin-left: 50px;
     margin-bottom: 10px;
 
-    outline: 7px rgba(184, 231, 16, 0.568) solid;
+    outline: 7px $color5 solid;
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
 }
 /*---------- iframe google maps -----------*/
 .mapsNosotros h3{
-
-
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     font-style: normal;
     font-weight: bolder;
     text-align: center;
@@ -115,20 +114,30 @@
 .footerNosotros{
     text-align: center;
     font-size: 16px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     font-style: normal;
     font-weight: 300;
-    color: white;
+    color: $color1;
+    i{ /*------------ iframe redes sociales -----------*/
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: $color1;
+        letter-spacing: 40px;
+    }
 }
-/*------------ iframe redes sociales -----------*/
-.footerNosotros i{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 40px;
+.footerNosotros, a, i{
+    .fa-facebook-square{
+        color: #1877f2;
+    }
+    .fa-instagram-square{
+        color: #c32aa3;
+    }
+    .fa-whatsapp-square{
+        color: #07943b;
+    }
 }
 /*-------------- datos del servicio -------------*/
 .footerdatosNosotros{

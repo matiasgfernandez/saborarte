@@ -10,39 +10,46 @@
     grid-column: 1/4;
     grid-row: 1/2;
 }
-.articleProductos{
+.titleProductos{
     grid-column: 1/4;
     grid-row: 2/3;
 }
-.testimonial{
+.articleProductos{
     grid-column: 1/4;
     grid-row: 3/4;
 }
-.articleProductos2{
+.testimonial{
     grid-column: 1/4;
     grid-row: 4/5;
 }
-.footerProductos{
+.articleProductos2{
     grid-column: 1/4;
     grid-row: 5/6;
 }
+.footerProductos{
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
 /*-- FIN GRIDS Productos -- */
 /*--------- header Productos ---------*/
-.headerProductos h1{
-    float: left;
-    margin-top: 1rem;
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
+.headerProductos{
+    background-color: #ddd01c;
+    h1{
+        float: left;
+        margin-top: 1rem;
+        margin-left: 10px;
+        font-size: 40px;
+        font-family: $font1;
+        color: $color1;
+    }
 }
 .headerProductos a{
     text-decoration:none;
 }
 .headerProductos a:hover{
-    color: white;
+    color: $color2;
     h1:hover{
-        color: white;
+        color: $color2;
     }
 }
 /*------- nav Productos ----------*/
@@ -57,13 +64,26 @@
         text-decoration: none;
         font-weight: 600;
         font-size: 17px;
-        font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
+        font-family: $font1;
+        color: $color1;
     }
 }
 /*------- FIN nav INDEX ----------*/
-
 /*--------- FIN header INDEX ---------*/
+.titleProductos{
+    padding: 20px;
+    h1{
+        text-align: center;
+        font-family: $font1;
+        font-weight: 600;
+    }
+}
+.fondotitleProductos{
+    width: 280px;
+    height: 40px;
+    background-color: $color5;
+    border-radius: 55px;
+}
 .articleProductos, .articleProductos2{
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +92,13 @@
     align-items: center;
     align-content: space-between
 }
+.articleProductos, .articleProductos2, h3{
+    text-align: center;
+    font-weight: bolder;
+    p{
+        font-weight: normal;
+    }
+}
 .imgProd{
     width: 180px;
     height: 150px;
@@ -79,31 +106,75 @@
     margin: 10px;
     background-position: center;
     background-size: cover;
-        h3{
-            text-align: center;
-            font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 2px 1px 10px 3px rgba(0, 0, 0, 0.623);
+}
+.testimonial{
+    font-family: $font1;
+    padding: 20px;
+    
+    h4{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+.testimonialText{
+    font-family: $font1;
+        h5{
+        width: 280px;
+        height: 40px;
+        padding: 10px;
+        background-color: $color5;
+        border-radius: 55px;
+        text-align: center;
         }
-        p{
+            h6{
             text-align: center;
-        }
+            margin: 0px 0px 15px;
+            font-size: 16px;
+            }
+}
+.text1, .text2{
+    margin: 10px;
+    text-align: center;
+}
+.avatar{
+    width: 55px;
+    height: 55px;
+    flex: 0 0 auto;
+    margin: 10px 40%;
+    background-position: center;
+    background-size: cover;
 }
 /*-------------- footer PRODUCTOS ---------------------*/
 .footerProductos{
     text-align: center;
     font-size: 16px;
-    font-family: 'Playfair Display', serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
     font-style: normal;
     font-weight: 300;
-    color: white;
+    color: $color1;
+    i{ /*- iframe redes sociales -*/
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        font-size: 30px;
+        color: $color1;
+        letter-spacing: 40px;
+    }
 }
-/*- iframe redes sociales -*/
-.footerProductos i{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 40px;
+.footerProductos, a, i{
+    .fa-facebook-square{
+        color: #1877f2;
+    }
+    .fa-instagram-square{
+        color: #c32aa3;
+    }
+    .fa-whatsapp-square{
+        color: #07943b;
+    }
 }
 /*- datos del servicio -*/
 .footerdatosProductos{

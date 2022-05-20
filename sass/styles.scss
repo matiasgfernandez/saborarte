@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');/*- link google fonts-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "_variables";
 @import "_index";
 @import "_nosotros";
@@ -23,12 +24,12 @@
     /*CONTACTO*/
         .contenedorContacto{
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.2fr 1.5fr 0.2fr;
+            grid-template-rows: 0.2fr 2.8fr 0.2fr;
         }
     /*FIN-CONTACTO*/
         .contenedorProductos{
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+            grid-template-rows: 0.1fr 0.1fr 1fr 0.2fr 1fr 0.2fr;
         }
 }
 /*-------- media 480px ------------*/
@@ -82,7 +83,37 @@
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
 
+        /*PRODUCTOS*/
+        .titleProductos{
+            padding: 20px;
+            margin: 0 20px;
+        }
+        .fondotitleProductos{
+            width: 400px;
+        }
+        .testimonialText{
+            h5{
+                margin: 0 75px 15px;
+            }
+        }
+        .avatar{
+            margin: 10px 44%;
+        }
+        /*-------------- footer PRODUCTOS ---------------------*/
+        .footerProductos{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerProductos i{
+            font-size: 40px;
+        }
+        /*-------------- FIN footer PRODUCTOS ---------------------*/
+        /*FIN-PRODUCTOS*/
+
         /*CONTACTO*/
+        #Contacto{
+            margin-bottom: 25px;
+        }
         .form{
             width: 350px;
         }
@@ -90,7 +121,30 @@
             width: 325px;
             padding: 5px;
         }
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            font-size: 40px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
         /*FIN-CONTACTO*/
+        /*FAQS*/
+        .accordion-wrapper {
+            width: 400px;
+        }
+        /*-------------- footer FAQS ---------------------*/
+        .footerFaqs{
+            font-size: 18px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerFaqs i{
+            font-size: 40px;
+        }
+        /*-------------- FIN footer FAQS ---------------------*/
+        /*FIN-FAQS*/
 }
 /*-------- media 600px ------------*/
     @media only screen and (min-width:600px){
@@ -151,6 +205,7 @@
         }
         /*-------------- FIN footer INDEX ---------------------*/
         /*FIN-INDEX*/
+
         /*NOSOTROS*/
         /*--------- header NOSOTROS ---------*/
         .headerNosotros h1{
@@ -205,6 +260,148 @@
         }
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
+
+        /*PRODUCTOS*/
+        /*--------- header PRODUCTOS ---------*/
+        .headerProductos h1{
+            font-size: 45px;
+        }
+        /*------- nav PRODUCTOS ----------*/
+        .navProductos{
+            margin-left: 40%;
+        }
+        .navProductos li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navProductos li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav PRODUCTOS ----------*/
+        /*--------- FIN header PRODUCTOS ---------*/
+        .titleProductos{
+            padding: 20px;
+            margin: 0 20px;
+        }
+        .fondotitleProductos{
+            width: 520px;
+        }
+        .testimonialText{
+            h5{
+                margin: 0 139px 15px;
+            }
+        }
+        .avatar{
+            margin: 10px 45%;
+        }
+        /*-------------- footer PRODUCTOS ---------------------*/
+        .footerProductos{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerProductos i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosProductos{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosProductos{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer PRODUCTOS ---------------------*/
+        /*FIN-PRODUCTOS*/
+
+        /*CONTACTO*/
+        /*--------- header CONTACTO ---------*/
+        .headerContacto h1{
+            font-size: 45px;
+        }
+        /*------- nav CONTACTO ----------*/
+        .navContacto{
+            margin-left: 40%;
+        }
+        .navContacto li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navContacto li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav CONTACTO ----------*/
+        /*--------- FIN header CONTACTO ---------*/
+        /*-------------- footer CONTACTO ---------------------*/
+        .footerContacto{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerContacto i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosContacto{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosContacto{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer CONTACTO ---------------------*/
+        /*FIN-CONTACTO*/
+
+        /*FAQS*/
+        /*--------- header FAQS ---------*/
+        .headerFaqs h1{
+            font-size: 45px;
+        }
+        /*------- nav FAQS ----------*/
+        .navFaqs{
+            margin-left: 40%;
+        }
+        .navFaqs li{
+            display: inline-block;
+            margin: 25px 4px;
+        }
+        .navFaqs li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav FAQS ----------*/
+        /*--------- FIN header FAQS ---------*/
+        .imgFaqs{
+            img{
+            width: 400px;
+            height: 300px;
+            }
+        }
+        /*-------------- footer FAQS ---------------------*/
+        .footerFaqs{
+            font-size: 22px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerFaqs i{
+            font-size: 50px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosFaqs{
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosFaqs{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer FAQS ---------------------*/
+        /*FIN-FAQS*/
+
 }
 /*------------------------------------- media 768px -----------------------*/
     @media only screen and (min-width:768px) and (max-width:1023px){ /* RESOLUCION 768px x 1024px */
@@ -330,6 +527,92 @@
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
 
+        /*PRODUCTOS*/
+        /*--------- header PRODUCTOS ---------*/
+        .headerProductos h1{
+            font-size: 50px;
+        }
+        /*------- nav PRODUCTOS ----------*/
+        .navProductos{
+            margin-left: 40%;
+        }
+        .navProductos li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navProductos li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav PRODUCTOS ----------*/
+        /*--------- FIN header PRODUCTOS ---------*/
+        .titleProductos{
+            padding: 20px;
+            margin: 0 60px;
+            h1{
+                font-size: 30px;
+            }
+        }
+        .fondotitleProductos{
+            width: 600px;
+            height: 55px;
+        }
+        .articlesProductos, .articleProductos2, h3{
+            font-size: 26px;
+        }
+        .articlesProductos, .articlesProductos2, h3, p{
+            font-size: 22px;
+        }
+        .imgProd{
+            width: 300px;
+            height: 250px;
+        }
+        .testimonial{
+            h4{
+                margin: 0 0 20px;
+                font-size: 28px;
+            }
+        }
+        .testimonialText{
+            h5{
+                width: 300px;
+                height: 60px;
+                margin: 0 210px 15px;
+                font-size: 22px;
+            }
+            h6{
+                font-size: 20px;
+            }
+        }
+        .avatar{
+            width: 70px;
+            height: 70px;
+            margin: 10px 45%;
+        }
+        .text1, .text2{
+            font-size: 20px;
+        }
+        /*-------------- footer PRODUCTOS ---------------------*/
+        .footerProductos{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerProductos i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosProductos{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosProductos{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer PRODUCTOS ---------------------*/
+        /*FIN-PRODUCTOS*/
+
         /*INICIO-CONTACTO*/
         .contenedorContacto{
             grid-template-rows: 0.2fr 2.4fr 0.2fr;
@@ -351,22 +634,20 @@
         }
         /*------- FIN nav CONTACTO ----------*/
         /*--------- FIN header CONTACTO ---------*/
-
         /*--------- Formulario Contacto --------- */
         #Contacto{
+            margin-bottom: 200px;
             font-size: 30px;
         }
         .form{
             width: 550px;
-            margin: 15px;
-
+            margin: 15px 0;
             font-size: 24px;
         }
         .form__input{
             width: 525px;
             margin: 10px;
             padding: 15px;
-
             font-size: 18px;
         }
         .form textarea{
@@ -393,14 +674,71 @@
         }
         /*-------------- FIN footer CONTACTO ---------------------*/
         /*FIN-CONTACTO*/
+
+        /*FAQS*/
+        /*--------- header FAQS ---------*/
+        .headerFaqs h1{
+            font-size: 50px;
+        }
+        /*------- nav FAQS ----------*/
+        .navFaqs{
+            margin-left: 40%;
+        }
+        .navFaqs li{
+            display: inline-block;
+            margin: 20px 10px;
+        }
+        .navFaqs li a{
+            font-size: 24px;
+        }
+        /*------- FIN nav FAQS ----------*/
+        /*--------- FIN header FAQS ---------*/
+        .titleFaqs{
+            font-size: 28px;
+        }
+        .accordion-wrapper{
+            width: 600px;
+        }
+        .accordion-label{
+            font-size: 26px;
+        }
+        .accordion-content p{
+            font-size: 24px;
+        }
+        .textoFaqs{
+            h3{
+                font-size: 26px;
+            }
+        }
+        /*-------------- footer FAQS ---------------------*/
+        .footerFaqs{
+            font-size: 30px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerFaqs i{
+            font-size: 80px;
+            margin-left: 70px;
+            letter-spacing: 80px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosFaqs{
+            margin-left: 10px;
+            font-size: 28px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosFaqs{
+            font-size: 22px;
+        }
+        /*-------------- FIN footer FAQS ---------------------*/
+        /*FIN-FAQS*/
 }
 /*------------------------------------- media 1024px -----------------------*/
     @media only screen and (min-width:1024px){
         /*INDEX*/
-        /*--------- header INDEX ---------*/
         .contenedorIndex{
             grid-template-rows: 0.1fr 2fr 0.1fr;
         }
+        /*--------- header INDEX ---------*/
         .headerIndex h1{
             margin-left: 15px;
             margin-top: 10px;
@@ -489,7 +827,7 @@
         }
         /*-------------- imagen NOSOTROS ------------ */
         .tortaNosotros{
-            margin: 20px 25% 20px;
+            margin: 20px 30% 20px;
             height: 400px;
             width: 540px;
         }
@@ -499,8 +837,8 @@
         /*---------- iframe google maps -----------*/
         .mapsNosotros iframe{
             height: 400px;
-            width: 400px;
-            margin-left: 35%;
+            width: 600px;
+            margin-left: 28%;
         }
         /*----------- footer NOSOTROS ---------*/
         .footerNosotros{
@@ -523,7 +861,98 @@
         /*-------------- FIN footer NOSOTROS -------------*/
         /*FIN-NOSOTROS*/
 
-                /*CONTACTO*/
+        /*PRODUCTOS*/
+        /*--- GRIDS Productos ---- */
+        /*- columnas y filas Productos -*/
+        /*--------- header PRODUCTOS ---------*/
+        .headerProductos h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav PRODUCTOS ----------*/
+        .navProductos{
+            margin-left: 65%;
+        }
+        .navProductos li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navProductos li a{
+            font-size: 20px;
+        }
+        /*------- FIN nav PRODUCTOS ----------*/
+        /*--------- FIN header PRODUCTOS ---------*/
+        .titleProductos{
+            padding: 40px;
+            margin: 0 250px;
+            h1{
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+        .fondotitleProductos{
+            width: 750px;
+            height: 60px;
+        }
+        .articlesProductos, .articleProductos2, h3{
+            font-size: 26px;
+        }
+        .articlesProductos, .articlesProductos2, h3, p{
+            margin: 10px;
+            font-size: 22px;
+        }
+        .imgProd{
+            width: 300px;
+            height: 250px;
+            margin: 0 0px 0 40px;
+        }
+        .testimonial{
+            h4{
+                margin: 0 0 20px;
+                font-size: 28px;
+            }
+        }
+        .testimonialText{
+            h5{
+                width: 300px;
+                height: 60px;
+                margin: 0 500px 15px;
+                font-size: 22px;
+            }
+            h6{
+                font-size: 20px;
+            }
+        }
+        .avatar{
+            width: 70px;
+            height: 70px;
+            margin: 10px 47.5%;
+        }
+        .text1, .text2{
+            font-size: 20px;
+        }
+        /*-------------- footer PRODUCTOS ---------------------*/
+        .footerProductos{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerProductos i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosProductos{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosProductos{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer PRODUCTOS ---------------------*/
+        /*FIN-PRODUCTOS*/
+        /*CONTACTO*/
         /*--------- header CONTACTO ---------*/
         .headerContacto h1{
             margin-left: 15px;
@@ -584,26 +1013,50 @@
         }
         /*-------------- FIN footer CONTACTO ---------------------*/
         /*FIN-CONTACTO*/
+        /*FAQS*/
+        /*--------- header FAQS ---------*/
+        .headerFaqs h1{
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 60px;
+        }
+        /*------- nav FAQS ----------*/
+        .navFaqs{
+            margin-left: 65%;
+        }
+        .navFaqs li{
+            display: inline-block;
+            margin: 30px 15px;
+        }
+        .navFaqs li a{
+            font-size: 20px;
+        }
+        /*------- FIN navFAQSS ----------*/
+        /*--------- FIN header FAQS ---------*/
+        .titleFaqs{
+            font-size: 28px;
+        }
+        .accordion-wrapper{
+            width: 700px;
+        }
+        /*-------------- footer FAQS ---------------------*/
+        .footerFaqs{
+            font-size: 36px;
+        }
+        /*------------ i redes sociales -----------*/
+        .footerFaqs i{
+            margin-left: 100px;
+            font-size: 70px;
+            letter-spacing: 100px;
+        }
+        /*-------------- datos del servicio -------------*/
+        .footerdatosFaqs{
+            font-size: 26px;
+        }
+        /*--------------- derechos de copyright ------------*/
+        .footerderechosFaqs{
+            font-size: 16px;
+        }
+        /*-------------- FIN footer FAQS ---------------------*/
+        /*FIN-FAQS*/
     }
-    
-/*--------- header INDEX ---------*/
-/*------- nav INDEX ----------*/
-/*------- FIN nav INDEX ----------*/
-/*--------- FIN header INDEX ---------*/
-/*----------- infoprincipal INDEX -------------*/
-/*-------------- galeria INDEX ------------ */
-/*-------------- footer INDEX ---------------------*/
-/*-------------- FIN footer INDEX ---------------------*/
-
-/*--------- header NOSOTROS ---------*/
-/*------- nav NOSOTROS ----------*/
-/*------- fin nav ----------*/
-/*--------- FIN header NOSOTROS ---------*/
-/*----------- info NOSOTROS -------------*/
-/*-------------- imagen NOSOTROS ------------ */
-/*---------- iframe google maps -----------*/
-/*----------- footer NOSOTROS ---------*/
-/*------------ i redes sociales -----------*/
-/*-------------- datos del servicio -------------*/
-/*--------------- derechos de copyright ------------*/
-/*-------------- FIN footer NOSOTROS -------------*/

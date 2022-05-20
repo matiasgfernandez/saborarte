@@ -7,13 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".././css/styles.css">
+    <link rel="stylesheet" href=".././sass/styles.css">
     <!-- linkfavicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-36x36.png">
     <!-- link google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS  -->
@@ -22,54 +25,65 @@
 </head>
 <body>
     <section class="contenedorProductos">
-        <div class="item headerProductos">
+        <div class="item headerProductos" data-aos="fade-down">
             <a href="../index.html"><h1>Saborarte</h1></a>
-            <ul class="navProductos">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
+                <ul class="navProductos">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
         </div>
+        <div class="titleProductos"><div class="fondotitleProductos"><h1>Productos</h1></div></div>
         <div class="item articleProductos">
-            <img src=".././img/productos1.jpg" alt="Torta con Champagne y Fresas" class="imgProd">
+            <img src=".././img/productos1.jpg" alt="Torta con Champagne y Fresas" class="imgProd" data-aos="flip-up">
                 <div>
                     <h3>Torta con Champagne y Fresas</h3>
                         <p>Es un postre suave, fragante y goloso, con un delicado aroma a vino espumoso, apto para disfrutar en cualquier momento del día. Ideal para el desayuno o merienda con una infusión caliente de frutos rojos, ofrécelo a tus invitados como postre al final de una comida.</p>
                 </div>
-            <img src=".././img/productos2.jpg" alt="Tarta de Vainilla" class="imgProd">
+            <img src=".././img/productos2.jpg" alt="Tarta de Vainilla" class="imgProd" data-aos="flip-down">
                 <div>
                     <h3>Tarta de Vainilla</h3>
                         <p>El bizcocho es suave, con un rotundo sabor a vainilla y su relleno es un chantillí avainillado. Este tipo de tartas no deberían faltar nunca en un té inglés, una merienda o en una fiesta de cumpleaños</p>
                 </div>
-            <img src=".././img/productos3.jpg" alt="Torta Red Velvet" class="imgProd">
+            <img src=".././img/productos3.jpg" alt="Torta Red Velvet" class="imgProd" data-aos="flip-right">
                 <div>
                     <h3>Torta Red Velvet</h3>
                         <p>Es un bizcocho que queda húmedo y jugosísimo, con un ligero toque agrio que es una maravilla y la cobertura dulce de queso es la que hace que la combinación sea auténtica.</p>
                 </div>
         </div>
-        <div class="item testimonial">
-            <div class="testimonialText"></div>
+        <div class="item testimonial" data-aos="fade-up">
+            <h4>Reseñas de nuestros clientes</h4>
+                <div class="testimonialText">
+                    <h5>Totalmente recomendable</h5>
+                    <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta rerum obcaecati fugit maxime.</p>
+                    <img src=".././img/hombre.png" alt="review Juan" class="avatar">
+                    <h6>Juan</h6>
+                    <h5>Muy buena atención!</h5>
+                    <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vitae. Nostrum cum rerum.</p>
+                    <img src=".././img/mujer.png" alt="review Maria" class="avatar">
+                    <h6>María</h6>
+                </div>
         </div>
         <div class="item articleProductos2">
-            <img src=".././img/productos4.jpg" alt="Pastel Helado con Frutillas" class="imgProd">
+            <img src=".././img/productos4.jpg" alt="Pastel Helado con Frutillas" class="imgProd" data-aos="flip-left">
                 <div>
                     <h3>Pastel Helado con Frutillas</h3>
                         <p>Este pastel es refrescante y esponjos, tiene una combinación de texturas increíble, que se convertirá en tu favorita.</p>
                 </div>
-            <img src=".././img/productos5.jpg" alt="Pastel de Casamiento" class="imgProd">
+            <img src=".././img/productos5.jpg" alt="Pastel de Casamiento" class="imgProd" data-aos="flip-down">
                 <div>
                     <h3>Pastel de Casamiento</h3>
                         <p>Un punto fuerte de este pastel es su elegancia. No es de grandes dimensiones, a decir verdad. Aunque lo que le falta en tamaño le sobra en estilo. Definitivamente no hallarás muchas otras bodas en las que haya uno similar. Por ende, la tuya será la más especial de todas.</p>
                 </div>
-            <img src=".././img/productos6.jpg" alt="Tarta Cheesecake de Café" class="imgProd">
+            <img src=".././img/productos6.jpg" alt="Tarta Cheesecake de Café" class="imgProd" data-aos="flip-up">
                 <div>
                     <h3>Tarta Cheesecake de Café</h3>
                         <p>La combinación de la textura crujiente de la base con la textura cremosa del cheesecake hace que este postre sea espectacular.</p>
                 </div>
         </div>
-        <div class="item footerProductos">
-            <div class="footerseguinosycontactanosProductos"> <strong>Seguinos y contáctanos en nuestras redes!</strong></div>
+        <div class="item footerProductos" data-aos="fade-up">
+            <div> <strong>Seguinos y contáctanos en nuestras redes!</strong></div>
             <a href="http://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square animredes"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square animredes"></i></a>
             <a href="http://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp-square animredes"></i></a>

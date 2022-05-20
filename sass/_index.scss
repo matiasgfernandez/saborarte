@@ -24,32 +24,34 @@
 }
 /*--FIN GRIDS INDEX--*/
 /*------------------------------------------ INICIO INDEX --------------------------------------- /* 
-
 /*--------- header INDEX ---------*/
-.headerIndex h1{
-    float: left;
-    margin-top: 1rem;
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: $font1;
-    color: rgb(0, 0, 0);
+.headerIndex{
+    background-color: #ddd01c;
+    h1{
+        float: left;
+        margin-top: 1rem;
+        margin-left: 10px;
+        font-size: 40px;
+        font-family: $font1;
+        color: $color1;
+    }
 }
 .headerIndex a{
     text-decoration:none;
 }
 .headerIndex a:hover{
-    color: white;
+    color: $color2;
 }
 .headerIndex a h1:hover{
-    color: white;
+    color: $color2;
 }
 /*------- nav INDEX ----------*/
 .navIndex{
     margin-left: 75%;
     margin-top: 0rem;
-}
-.navIndex li{
-    list-style: none;
+    li{
+        list-style: none;
+    }
 }
 .navIndex li a{
     line-height: 1.3rem;
@@ -57,12 +59,10 @@
     font-weight: 600;
     font-size: 17px;
     font-family: $font1;
-    color: black;
+    color: $color1;
 }
 /*------- FIN nav INDEX ----------*/
-
 /*--------- FIN header INDEX ---------*/
-
 /*----------- infoprincipal INDEX -------------*/
 .tituloInfoPrincipal{
     margin-left: 10px;
@@ -78,6 +78,7 @@
 
     list-style-type: none;
     font-size: 20px;
+    font-family: $font1;
     font-style: italic;
     font-weight: 500;
     line-height: 2rem;
@@ -91,13 +92,13 @@
 .torta1, .torta2, .torta3{
     height: 130px;
     width: 120px;
-    border: 7px solid #db392abd; /* CAMBIAR COLOR */
+    border: 7px solid $color5;
     margin-top: 10px;
     margin-left: 10px;
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
 }
-
 /*-------------- footer INDEX ---------------------*/
 .footerIndex{
     text-align: center;
@@ -105,16 +106,26 @@
     font-family: $font1;
     font-style: normal;
     font-weight: 300;
-    color: white;
+    color: $color1;
+    i{ /*- iframe redes sociales -*/
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        font-size: 30px;
+        color: $color1;
+        letter-spacing: 40px;
+    }
 }
-/*- iframe redes sociales -*/
-.footerIndex i{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 40px;
+.footerIndex, a, i{
+    .fa-facebook-square{
+        color: #1877f2;
+    }
+    .fa-instagram-square{
+        color: #c32aa3;
+    }
+    .fa-whatsapp-square{
+        color: #07943b;
+    }
 }
 /*- datos del servicio -*/
 .footerdatosIndex{
