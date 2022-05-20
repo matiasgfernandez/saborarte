@@ -1,0 +1,76 @@
+/* -- ANIMACIONES -- */
+/*---- animaciones img tortas INDEX ------- */
+.animtorta1:hover{
+    -webkit-animation: 2s animtorta1 1;
+}
+@-webkit-keyframes animtorta1{
+    20%{
+        -webkit-transform: scale(0.9) rotate(-2deg);
+    }
+    30%, 50%, 70%, 90%{
+        -webkit-transform: scale(0.9) rotate(2deg);
+    }
+    40%, 60%, 80%{
+        -webkit-transform: scale(0.9) rotate(-2deg);
+    }
+}
+/* ------ animaciones iframe redes, todas las secciones ---------- */
+.animredes:hover{
+    -webkit-animation: 1s animredes 1;
+}
+@-webkit-keyframes animredes{
+    40%{
+        -webkit-transform: scale(1.0);
+    }
+    20%, 60%{
+        -webkit-transform: scale(1.1);
+    }
+}
+/*---------- animacion torta NOSOTROS --------------- */
+.apariciontorta { 
+	animation: 5s apariciontorta 1; 
+	transform-origin: top left;
+}
+
+@keyframes apariciontorta
+{
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+}
+/* --------animaciones formulario CONTACTO ----------*/
+/* intro formulario */
+.veloz 
+{
+	animation: 1s veloz 1;
+}
+
+@keyframes veloz
+{
+	0% 
+	{ 
+		opacity: 0;
+		transform: translateX(-200%) skewX(15deg); 
+	}
+
+	60% 
+	{
+		opacity: 1;
+		transform: translateX(20%) skewX(-15deg);
+	}
+
+	80%
+	{
+		transform: translateX(0%) skewX(15deg);
+	}
+}
+/* boton enviar movimiento */
+.animenviar:hover
+{
+	animation: 1s animenviar infinite;
+}
+
+@keyframes animenviar
+{
+	5%, 25%, 45%, 65%, 85% { transform: translateX(-2px); }
+	15%, 35%, 55%, 75%, 95% { transform: translateX(2px); }
+}
