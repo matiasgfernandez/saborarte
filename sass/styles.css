@@ -119,7 +119,7 @@ body {
 .torta1, .torta2, .torta3 {
   height: 130px;
   width: 120px;
-  border: 7px solid #E8617A;
+  outline: 7px solid #E8617A;
   margin-top: 10px;
   margin-left: 10px;
   background-position: center;
