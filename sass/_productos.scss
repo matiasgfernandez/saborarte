@@ -31,44 +31,6 @@
     grid-row: 6/7;
 }
 /*-- FIN GRIDS Productos -- */
-/*--------- header Productos ---------*/
-.headerProductos{
-    background-color: #ddd01c;
-    h1{
-        float: left;
-        margin-top: 1rem;
-        margin-left: 10px;
-        font-size: 40px;
-        font-family: $font1;
-        color: $color1;
-    }
-}
-.headerProductos a{
-    text-decoration:none;
-}
-.headerProductos a:hover{
-    color: $color2;
-    h1:hover{
-        color: $color2;
-    }
-}
-/*------- nav Productos ----------*/
-.navProductos{
-    margin-left: 75%;
-    margin-top: 0rem;
-}
-.navProductos li{
-    list-style: none;
-    a{
-        line-height: 1.3rem;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 17px;
-        font-family: $font1;
-        color: $color1;
-    }
-}
-/*------- FIN nav INDEX ----------*/
 /*--------- FIN header INDEX ---------*/
 .titleProductos{
     padding: 20px;

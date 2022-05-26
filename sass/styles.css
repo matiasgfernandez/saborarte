@@ -13,6 +13,58 @@ body {
   background-image: linear-gradient(to bottom, #ffff48, #feff56, #fdff62, #fcff6d, #fbff78, #f6fb75, #f1f773, #ecf370, #e1ea60, #d7e14f, #ccd83d, #c1cf27);
 }
 
+/*--- navbar ---*/
+.container-fluid .nav-link, .container-fluid .navbar-brand {
+  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+.container-fluid .navbar-brand {
+  font-size: 1.5rem;
+  padding: 0 20px 5px;
+  background-color: rgb(218, 197, 10);
+  border-radius: 45%;
+}
+.container-fluid button:hover span {
+  -webkit-animation: 0;
+  animation: none;
+}
+
+/*-------- media 480px ------------*/
+@media only screen and (min-width: 480px) {
+  .container-fluid .nav-link, .container-fluid .navbar-brand {
+    margin: 5px 5px 0px 5px;
+    font-size: 1.5rem;
+  }
+}
+/*-------- media 600px ------------*/
+@media only screen and (min-width: 600px) {
+  .container-fluid .nav-link, .container-fluid .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+/*------------------------------------- media 768px -----------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* RESOLUCION 768px x 1024px */
+  .container-fluid .nav-link, .container-fluid .navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+/*------------------------------------- media 1024px -----------------------*/
+@media only screen and (min-width: 1024px) {
+  .container-fluid .navbar-brand {
+    font-size: 2.7rem;
+  }
+  .container-fluid .nav-link, .container-fluid .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .container-fluid .navbar-nav {
+    margin-left: 55%;
+  }
+  .container-fluid .navbar-nav a {
+    margin: 0 10px;
+  }
+}
 /*--- GRIDS INDEX ---- */
 .contenedorIndex {
   min-height: 100vh;
@@ -27,12 +79,7 @@ body {
 }
 
 .mainInfohome {
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-
-.sidebarGaleriahome {
-  grid-column: 3/5;
+  grid-column: 1/5;
   grid-row: 2/3;
 }
 
@@ -43,88 +90,39 @@ body {
 
 /*--FIN GRIDS INDEX--*/
 /*------------------------------------------ INICIO INDEX --------------------------------------- /* 
-/*--------- header INDEX ---------*/
-.headerIndex {
-  background-color: #ddd01c;
-}
-.headerIndex h1 {
-  float: left;
-  margin-top: 1rem;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.headerIndex a {
-  text-decoration: none;
-}
-
-.headerIndex a:hover {
-  color: white;
-}
-
-.headerIndex a h1:hover {
-  color: white;
-}
-
-/*------- nav INDEX ----------*/
-.navIndex {
-  margin-left: 75%;
-  margin-top: 0rem;
-}
-.navIndex li {
-  list-style: none;
-}
-
-.navIndex li a {
-  line-height: 1.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-/*------- FIN nav INDEX ----------*/
-/*--------- FIN header INDEX ---------*/
 /*----------- infoprincipal INDEX -------------*/
-.tituloInfoPrincipal {
-  margin-left: 10px;
+.mainInfohome h1, .mainInfohome h2, .mainInfohome h3 {
+  margin: 20px 0 10px 0;
+  padding: 20px;
+  text-align: center;
   font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
-  font-style: italic;
   font-weight: bolder;
-  font-size: 22px;
 }
-
-.listaInfoPrincipal {
-  margin-top: 10px;
-  margin-left: 15px;
-  list-style-type: none;
-  font-size: 20px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 2rem;
-}
-
-.sidebarGaleriahome {
-  display: flex;
-  flex-flow: column;
-  justify-content: none;
-}
-
-/*-------------- galeria INDEX ------------ */
-.torta1, .torta2, .torta3 {
-  height: 130px;
-  width: 120px;
+.mainInfohome .torta1, .mainInfohome .torta2, .mainInfohome .torta3 {
+  height: 250px;
+  width: 240px;
   outline: 7px solid #E8617A;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px 50px;
   background-position: center;
   background-size: cover;
   border-radius: 5px;
+}
+.mainInfohome p {
+  margin: 25px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+.mainInfohome ul {
+  margin: 10px 15px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
 }
 
 /*-------------- footer INDEX ---------------------*/
@@ -200,52 +198,6 @@ body {
 
 /*-- FIN GRIDS NOSOTROS -- */
 /*------------------------------------------ INICIO NOSOTROS --------------------------------------- /*
-/*--------- header NOSOTROS ---------*/
-.headerNosotros {
-  background-color: #ddd01c;
-}
-.headerNosotros h1 {
-  float: left;
-  margin-top: 1rem;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.headerNosotros a {
-  text-decoration: none;
-}
-
-.headerNosotros a:hover {
-  color: white;
-}
-
-.headerNosotros a h1:hover {
-  color: white;
-}
-
-/*------- nav NOSOTROS ----------*/
-.navNosotros {
-  margin-left: 75%;
-  margin-top: 0rem;
-}
-
-.navNosotros li {
-  list-style: none;
-}
-
-.navNosotros li a {
-  line-height: 1.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-}
-
-/*------- fin nav ----------*/
-/*--------- FIN header NOSOTROS ---------*/
 /*----------- info NOSOTROS -------------*/
 .nosotros h2 {
   margin-left: 5px;
@@ -378,49 +330,6 @@ body {
 }
 
 /*-- FIN GRIDS Productos -- */
-/*--------- header Productos ---------*/
-.headerProductos {
-  background-color: #ddd01c;
-}
-.headerProductos h1 {
-  float: left;
-  margin-top: 1rem;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.headerProductos a {
-  text-decoration: none;
-}
-
-.headerProductos a:hover {
-  color: white;
-}
-.headerProductos a:hover h1:hover {
-  color: white;
-}
-
-/*------- nav Productos ----------*/
-.navProductos {
-  margin-left: 75%;
-  margin-top: 0rem;
-}
-
-.navProductos li {
-  list-style: none;
-}
-.navProductos li a {
-  line-height: 1.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-/*------- FIN nav INDEX ----------*/
 /*--------- FIN header INDEX ---------*/
 .titleProductos {
   padding: 20px;
@@ -576,52 +485,6 @@ body {
 
 /*-- FIN GRIDS CONTACTO -- */
 /*------------------------------------------ INICIO CONTACTO --------------------------------------- /*
-/*--------- header INDEX ---------*/
-.headerContacto {
-  background-color: #ddd01c;
-}
-.headerContacto h1 {
-  float: left;
-  margin-top: 1rem;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.headerContacto a {
-  text-decoration: none;
-}
-
-.headerContacto a:hover {
-  color: white;
-}
-
-.headerContacto a h1:hover {
-  color: rgb(0, 0, 0);
-}
-
-/*------- nav CONTACTO ----------*/
-.navContacto {
-  margin-left: 75%;
-  margin-top: 0rem;
-}
-
-.navContacto li {
-  list-style: none;
-}
-
-.navContacto li a {
-  line-height: 1.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-/*------- fin nav ----------*/
-/*--------- FIN header CONTACTO ---------*/
 /*--------- Formulario Contacto --------- */
 #formularioContacto {
   display: flex;
@@ -758,52 +621,6 @@ fieldset {
 }
 
 /*-- FIN GRIDS Faqs -- */
-/*--------- header Faqs ---------*/
-.headerFaqs {
-  background-color: #ddd01c;
-}
-.headerFaqs h1 {
-  float: left;
-  margin-top: 1rem;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.headerFaqs a {
-  text-decoration: none;
-}
-
-.headerFaqs a:hover {
-  color: white;
-}
-
-.headerFaqs a h1:hover {
-  color: white;
-}
-
-/*------- nav Faqs ----------*/
-.navFaqs {
-  margin-left: 75%;
-  margin-top: 0rem;
-}
-
-.navFaqs li {
-  list-style: none;
-}
-
-.navFaqs li a {
-  line-height: 1.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-/*------- FIN Faqs ----------*/
-/*--------- FIN head Faqs ---------*/
 .titleFaqs {
   font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -917,7 +734,8 @@ input:checked ~ .accordion-content {
   text-align: center;
 }
 
-button {
+.buttonContacto {
+  margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
   outline: none;
@@ -931,35 +749,34 @@ button {
   background-color: #E8617A;
   border: 1px solid rgba(22, 75, 167, 0);
 }
-button a {
+.buttonContacto a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-button span {
-  color: #164ca7;
+.buttonContacto span {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.7px;
 }
 
-button:hover {
+.buttonContacto:hover {
   -webkit-animation: rotate 0.7s ease-in-out both;
           animation: rotate 0.7s ease-in-out both;
 }
 
-button:hover span {
+.buttonContacto:hover span {
   -webkit-animation: storm 0.7s ease-in-out both;
           animation: storm 0.7s ease-in-out both;
   -webkit-animation-delay: 0.06s;
           animation-delay: 0.06s;
 }
 
-button, span, a {
+.buttonContacto, span, a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 800;
-  color: rgb(0, 0, 0);
 }
 
 @-webkit-keyframes rotate {
@@ -1190,7 +1007,7 @@ button, span, a {
   /*INDEX*/
   .contenedorIndex {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2.9fr 1fr;
+    grid-template-rows: 0.2fr 2.9fr 0.2fr;
   }
 
   /*FIN-INDEX*/
@@ -1216,25 +1033,10 @@ button, span, a {
 /*-------- media 480px ------------*/
 @media only screen and (min-width: 480px) {
   /*INDEX*/
-  .contenedorIndex {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 2.6fr 1fr;
-  }
-
-  /*----------- infoprincipal INDEX -------------*/
-  .tituloInfoPrincipal {
-    margin-top: 5px;
-  }
-
-  .listaInfoPrincipal {
-    line-height: 2.5rem;
-  }
-
-  /*-------------- galeria INDEX ------------ */
-  .torta1, .torta2, .torta3 {
-    margin: 5px 0px 0px 50px;
-    height: 140px;
-    width: 130px;
+  .mainInfohome .torta1, .mainInfohome .torta2, .mainInfohome .torta3 {
+    height: 370px;
+    width: 340px;
+    margin: 0 70px;
   }
 
   /*-------------- footer INDEX ---------------------*/
@@ -1349,13 +1151,8 @@ button, span, a {
 /*-------- media 600px ------------*/
 @media only screen and (min-width: 600px) {
   /*INDEX*/
-  .contenedorIndex {
-    grid-template-rows: 0.2fr 2.8fr 1fr;
-  }
-
-  /*--------- header INDEX ---------*/
-  .headerIndex h1 {
-    font-size: 45px;
+  .mainInfohome .torta1, .mainInfohome .torta2, .mainInfohome .torta3 {
+    margin: 0 130px;
   }
 
   /*------- nav INDEX ----------*/
@@ -1650,13 +1447,18 @@ button, span, a {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* RESOLUCION 768px x 1024px */
   /*INDEX*/
-  .contenedorIndex {
-    grid-template-rows: 0.2fr 2.8fr 0.2fr;
+  .mainInfohome .torta1, .mainInfohome .torta2, .mainInfohome .torta3 {
+    height: 500px;
+    width: 450px;
+    margin: 15px 150px;
   }
-
-  /*--------- header INDEX ---------*/
-  .headerIndex h1 {
-    font-size: 50px;
+  .mainInfohome p {
+    font-size: 30px;
+  }
+  .mainInfohome ul {
+    margin: 10px 15%;
+    font-size: 28px;
+    line-height: 4rem;
   }
 
   /*------- nav INDEX ----------*/
@@ -2038,53 +1840,18 @@ button, span, a {
 /*------------------------------------- media 1024px -----------------------*/
 @media only screen and (min-width: 1024px) {
   /*INDEX*/
-  .contenedorIndex {
-    grid-template-rows: 0.1fr 2fr 0.1fr;
+  .mainInfohome .torta1, .mainInfohome .torta2, .mainInfohome .torta3 {
+    height: 400px;
+    width: 350px;
+    margin: 15px 35%;
   }
-
-  /*--------- header INDEX ---------*/
-  .headerIndex h1 {
-    margin-left: 15px;
-    margin-top: 10px;
-    font-size: 60px;
+  .mainInfohome p {
+    font-size: 30px;
   }
-
-  /*------- nav INDEX ----------*/
-  .navIndex {
-    margin-left: 65%;
-  }
-
-  .navIndex li {
-    display: inline-block;
-    margin: 30px 15px;
-  }
-
-  .navIndex li a {
-    font-size: 20px;
-  }
-
-  /*------- FIN nav INDEX ----------*/
-  /*--------- FIN header INDEX ---------*/
-  /*----------- infoprincipal INDEX -------------*/
-  .tituloInfoPrincipal {
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 15%;
-    font-size: 36px;
-  }
-
-  .listaInfoPrincipal {
-    margin-left: 15%;
-    padding: 10px;
-    font-size: 28px;
-    line-height: 15rem;
-  }
-
-  /*-------------- galeria INDEX ------------ */
-  .torta1, .torta2, .torta3 {
-    margin: 40px 0px 20px 140px;
-    height: 450px;
-    width: 370px;
+  .mainInfohome ul {
+    margin: 10px 35% 15px;
+    font-size: 22px;
+    line-height: 4rem;
   }
 
   /*-------------- footer INDEX ---------------------*/

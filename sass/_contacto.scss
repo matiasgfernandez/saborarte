@@ -20,45 +20,6 @@
 }
 /*-- FIN GRIDS CONTACTO -- */
 /*------------------------------------------ INICIO CONTACTO --------------------------------------- /*
-/*--------- header INDEX ---------*/
-.headerContacto{
-    background-color: #ddd01c;
-    h1{
-        float: left;
-        margin-top: 1rem;
-        margin-left: 10px;
-        font-size: 40px;
-        font-family: $font1;
-        color: $color1;
-    }
-}
-.headerContacto a{
-    text-decoration:none;
-}
-.headerContacto a:hover{
-    color: $color2;
-}
-.headerContacto a h1:hover{
-    color: $color1;
-}
-/*------- nav CONTACTO ----------*/
-.navContacto{
-    margin-left: 75%;
-    margin-top: 0rem;
-}
-.navContacto li{
-    list-style: none;
-}
-.navContacto li a{
-    line-height: 1.3rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    font-family: $font1;
-    color: $color1;
-}
-/*------- fin nav ----------*/
-/*--------- FIN header CONTACTO ---------*/
 /*--------- Formulario Contacto --------- */
 #formularioContacto{
     display: flex;

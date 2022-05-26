@@ -31,45 +31,6 @@
     grid-row: 6/7;
 }
 /*-- FIN GRIDS Faqs -- */
-/*--------- header Faqs ---------*/
-.headerFaqs{
-    background-color: #ddd01c;
-    h1{
-        float: left;
-        margin-top: 1rem;
-        margin-left: 10px;
-        font-size: 40px;
-        font-family: $font1;
-        color: $color1;
-    }
-}
-.headerFaqs a{
-    text-decoration:none;
-}
-.headerFaqs a:hover{
-    color: $color2;
-}
-.headerFaqs a h1:hover{
-    color: $color2;
-}
-/*------- nav Faqs ----------*/
-.navFaqs{
-    margin-left: 75%;
-    margin-top: 0rem;
-}
-.navFaqs li{
-    list-style: none;
-}
-.navFaqs li a{
-    line-height: 1.3rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    font-family: $font1;
-    color: $color1;
-}
-/*------- FIN Faqs ----------*/
-/*--------- FIN head Faqs ---------*/
 .titleFaqs{
     font-family: $font1;
     text-align: center;
@@ -174,7 +135,8 @@ input:checked ~ .accordion-content {
         text-align: center;
     }
 }
-button {
+.buttonContacto {
+    margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
     outline: none;
@@ -189,27 +151,26 @@ button {
     border: 1px solid rgba(22, 75, 167, 0);
     a{
         text-decoration: none;
+        color: $color1;
     }
 }
-button span {
-    color: #164ca7;
+.buttonContacto span {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.7px;
 }
-button:hover {
+.buttonContacto:hover {
     animation: rotate 0.7s ease-in-out both;
 }
-button:hover span {
+.buttonContacto:hover span {
     animation: storm 0.7s ease-in-out both;
     animation-delay: 0.06s;
 }
-button, span, a{
+.buttonContacto, span, a{
     text-decoration: none;
     font-family: $font2;
     font-size: 16px;
     font-weight: 800;
-    color: $color1;
 }
 @keyframes rotate {
     0% {

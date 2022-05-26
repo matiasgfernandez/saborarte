@@ -24,45 +24,6 @@
 }
 /*-- FIN GRIDS NOSOTROS -- */
 /*------------------------------------------ INICIO NOSOTROS --------------------------------------- /*
-/*--------- header NOSOTROS ---------*/
-.headerNosotros{
-    background-color: #ddd01c;
-    h1{
-        float: left;
-        margin-top: 1rem;
-        margin-left: 10px;
-        font-size: 40px;
-        font-family: $font1;
-        color: $color1;
-    }
-}
-.headerNosotros a{
-    text-decoration:none;
-}
-.headerNosotros a:hover{
-    color: $color2;
-}
-.headerNosotros a h1:hover{
-    color: $color2;
-}
-/*------- nav NOSOTROS ----------*/
-.navNosotros{
-    margin-left: 75%;
-    margin-top: 0rem;
-}
-.navNosotros li{
-    list-style: none;
-}
-.navNosotros li a{
-    line-height: 1.3rem;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    font-family: $font1;
-    color: black;
-}
-/*------- fin nav ----------*/
-/*--------- FIN header NOSOTROS ---------*/
 /*----------- info NOSOTROS -------------*/
 .nosotros h2{
     margin-left: 5px;
